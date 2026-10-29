@@ -27,6 +27,9 @@
 
 [Releases](../../releases) から、お使いのパソコンに合ったファイルをダウンロードして展開します。
 
+> [!TIP]
+> **最新版の探し方**: 現在はすべて「プレリリース (テスト版)」として公開しているため、右側の Releases 欄に「Latest」の印が付きません。[Releases の一覧](https://github.com/dog4god-arch/AITuber-Go-App/releases) を開き、**いちばん上にあるバージョンが最新版**です。
+
 | パソコン | ファイル | 動作確認 |
 |---|---|---|
 | Windows (64bit) | `aituber-windows-amd64.zip` | 一部のみ |
