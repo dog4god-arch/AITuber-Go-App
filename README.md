@@ -94,10 +94,12 @@ xattr -d com.apple.quarantine ./aituber   # 初回だけ (インターネット�
 
 | もの | 使う場面 |
 |---|---|
-| [AivisSpeech](https://aivis-project.com/) など音声合成ソフト | キャラクターの声 (クラウドの音声合成を使うなら不要) |
-| LLM の API キー (Gemini など) | 会話 (Ollama などローカルの LLM なら不要) |
+| 音声合成 (どれか 1 つ) | キャラクターの声。既定は [AivisSpeech](https://aivis-project.com/) (無料・パソコンで動く) ですが、ほかに次のものも選べます。<br>・パソコンで動くもの: VOICEVOX / Irodori-TTS / Style-Bert-VITS2 など<br>・クラウドのもの (API キーが必要): Aivis Cloud API / OpenAI / ElevenLabs など |
+| LLM (どれか 1 つ) | 会話。既定は Google Gemini (無料の API キーで使える) ですが、ほかに次のものも選べます。<br>・クラウドのもの (API キーが必要): OpenAI / Anthropic Claude など<br>・パソコンで動くもの (API キー不要): Ollama / LM Studio などの OpenAI 互換 |
 | [OBS Studio](https://obsproject.com/) | OBS で配信する場合 |
 | [ffmpeg](https://ffmpeg.org/download.html) | OBS を使わず、内蔵の「スタジオ」から配信・録画する場合 |
+
+音声合成と LLM は、管理画面の設定でいつでも切り替えられます。普段使っているものがあれば、それをそのまま使ってください。
 
 ## テストへのご協力のお願い
 
