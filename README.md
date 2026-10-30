@@ -16,7 +16,7 @@
 - 🎭 **アバター**: VRM / Live2D / 画像 1 枚から作る AITuber Puppet。表情・まばたき・視線・口パク・身振り・手を振るお見送り
 - 💗 **感情表現**: AI が文ごとに感情を付け、表情・モーション・声色が切り替わります
 - 🗣️ **音声合成**: AivisSpeech (無料・既定) / Aivis Cloud API / VOICEVOX / Irodori-TTS / Style-Bert-VITS2 / OpenAI / ElevenLabs など
-- 🧠 **LLM**: Google Gemini (無料の API キーで使える・既定) / OpenAI / Anthropic Claude / Ollama / LM Studio などの OpenAI 互換
+- 🧠 **LLM**: Google Gemini (既定) / OpenAI / Anthropic Claude / Ollama / LM Studio などの OpenAI 互換
 - 📺 **配信サイト**: YouTube Live (限定公開にも対応) / Twitch / ツイキャス / Kick のコメントを読んで返事をします
 - 📰 **話題**: トレンドやニュース、会話の流れからテーマを決めて雑談します
 - 🎬 **配信形態**: 雑談・歌枠・ゲーム実況・質問コーナー・朗読。BGM、予約配信、共演 (複数キャラ)、コラボ配信、縦長配信
@@ -69,7 +69,7 @@ xattr -d com.apple.quarantine ./aituber   # 初回だけ (インターネット�
 ## はじめの設定
 
 1. **音声合成**: [AivisSpeech](https://aivis-project.com/) (無料) をインストールして起動しておきます。管理画面の「音声合成」で声を選びます
-2. **LLM**: [Google AI Studio](https://aistudio.google.com/apikey) で無料の API キーを作り、管理画面の「LLM」の「Google Gemini」に貼り付けます
+2. **LLM**: [Google AI Studio](https://aistudio.google.com/apikey) で API キーを作り、管理画面の「LLM」の「Google Gemini」に貼り付けます（料金・利用枠は Google の条件によります。無料枠はすぐ上限に達することがあります）
 3. **画面に表示**: OBS に「ブラウザソース」を追加し、URL `http://127.0.0.1:8930/overlay/`、幅 1920・高さ 1080 にします (縦長配信なら 1080・1920)。「OBS で音声を制御する」にチェックを入れます
 4. **配信サイト**: 管理画面の「配信プラットフォーム」で YouTube などを有効にし、ダッシュボードで配信を始めます
 
@@ -98,7 +98,7 @@ xattr -d com.apple.quarantine ./aituber   # 初回だけ (インターネット�
 
 | 名前 | 動く場所 | API キー | 備考 |
 |---|---|---|---|
-| Google Gemini | クラウド | 必要 | **既定**。無料枠の API キーでも使えます |
+| Google Gemini | クラウド | 必要 | **既定**。料金・利用枠は Google の条件によります |
 | OpenAI | クラウド | 必要 | |
 | Anthropic Claude | クラウド | 必要 | |
 | Ollama | パソコン | 不要 | |
