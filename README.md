@@ -90,16 +90,53 @@ xattr -d com.apple.quarantine ./aituber   # 初回だけ (インターネット�
 
 より自然に・細かく動かしたい場合は、VRM / Live2D のモデルがおすすめです。
 
-## 必要に応じて用意するもの
+## 使えるサービス・ソフト（現在）
+
+いま AITuber-Go で選べるものの一覧です。どれも管理画面の設定でいつでも切り替えられるので、普段使っているものがあれば、それをそのまま使ってください。
+
+### LLM (会話) — どれか 1 つ
+
+| 名前 | 動く場所 | API キー | 備考 |
+|---|---|---|---|
+| Google Gemini | クラウド | 必要 | **既定**。無料枠の API キーでも使えます |
+| OpenAI | クラウド | 必要 | |
+| Anthropic Claude | クラウド | 必要 | |
+| Ollama | パソコン | 不要 | |
+| LM Studio | パソコン | 不要 | OpenAI 互換として接続 |
+| llama.cpp (llama-server) | パソコン | 不要 | OpenAI 互換として接続 |
+| そのほかの OpenAI 互換 | パソコン / クラウド | サービスによる | vLLM / OpenRouter / Groq / DeepSeek など。接続先の URL を入れて使います |
+
+### 音声合成 (キャラクターの声) — どれか 1 つ
+
+| 名前 | 動く場所 | API キー | 備考 |
+|---|---|---|---|
+| [AivisSpeech](https://aivis-project.com/) | パソコン | 不要 | **既定**。無料 |
+| VOICEVOX | パソコン | 不要 | SHAREVOX など VOICEVOX 互換のソフトも使えます |
+| Irodori-TTS | パソコン | 不要 | 絵文字で感情を付けられます |
+| Style-Bert-VITS2 | パソコン | 不要 | |
+| Aivis Cloud API | クラウド | 必要 | |
+| OpenAI TTS | クラウド | 必要 | |
+| ElevenLabs | クラウド | 必要 | |
+| 汎用 HTTP | パソコン / クラウド | 接続先による | 文章を送ると音声を返すものなら、自作のサーバーなども使えます |
+
+### アバター
+
+| 種類 | 備考 |
+|---|---|
+| AITuber Puppet (画像から作る 2D) | **既定**。サンプルキャラクター「いろは」入り |
+| VRM (3D) | `.vrm` ファイル |
+| Live2D | `.model3.json` のモデル |
+
+### コメントを読み込める配信サイト
+
+YouTube / Twitch / ツイキャス / ニコニコ生放送 / Kick
+
+### 配信に使うソフト
 
 | もの | 使う場面 |
 |---|---|
-| 音声合成 (どれか 1 つ) | キャラクターの声。既定は [AivisSpeech](https://aivis-project.com/) (無料・パソコンで動く) ですが、ほかに次のものも選べます。<br>・パソコンで動くもの: VOICEVOX / Irodori-TTS / Style-Bert-VITS2 など<br>・クラウドのもの (API キーが必要): Aivis Cloud API / OpenAI / ElevenLabs など |
-| LLM (どれか 1 つ) | 会話。既定は Google Gemini (無料の API キーで使える) ですが、ほかに次のものも選べます。<br>・クラウドのもの (API キーが必要): OpenAI / Anthropic Claude など<br>・パソコンで動くもの (API キー不要): Ollama / LM Studio などの OpenAI 互換 |
 | [OBS Studio](https://obsproject.com/) | OBS で配信する場合 |
 | [ffmpeg](https://ffmpeg.org/download.html) | OBS を使わず、内蔵の「スタジオ」から配信・録画する場合 |
-
-音声合成と LLM は、管理画面の設定でいつでも切り替えられます。普段使っているものがあれば、それをそのまま使ってください。
 
 ## テストへのご協力のお願い
 
