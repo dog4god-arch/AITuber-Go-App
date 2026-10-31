@@ -35,8 +35,9 @@
 |---|---|---|
 | Windows (64bit) | `aituber-windows-amd64.zip` | 一部のみ |
 | Mac (Apple シリコン: M1〜) | `aituber-macos-arm64.zip` | 未確認 |
-| Mac (Intel) | `aituber-macos-amd64.zip` | 未確認 |
 | Linux (x86_64) | `aituber-linux-amd64.tar.gz` | 一部のみ (報告 1 件) |
+
+Intel の Mac には対応していません (Mac は Apple シリコン (M1 以降) のみです)。
 
 インストールは不要です。展開したフォルダに、実行ファイルとライセンスの文書が入っています。
 
