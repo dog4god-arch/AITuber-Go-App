@@ -17,7 +17,7 @@
 - 💗 **感情表現**: AI が文ごとに感情を付け、表情・モーション・声色が切り替わります
 - 🗣️ **音声合成**: AivisSpeech (無料・既定) / Aivis Cloud API / VOICEVOX / Irodori-TTS / Style-Bert-VITS2 / OpenAI / ElevenLabs など
 - 🧠 **LLM**: Google Gemini (既定) / OpenAI / Anthropic Claude / Ollama / LM Studio などの OpenAI 互換
-- 📺 **配信サイト**: YouTube Live (限定公開にも対応) / Twitch / ツイキャス / Kick のコメントを読んで返事をします
+- 📺 **配信サイト**: YouTube Live (限定公開にも対応) / Twitch / ツイキャス / Kick / TikTok LIVE のコメントを読んで返事をします
 - 📰 **話題**: トレンドやニュース、会話の流れからテーマを決めて雑談します
 - 🎬 **配信形態**: 雑談・歌枠・ゲーム実況・質問コーナー・朗読。BGM、予約配信、共演 (複数キャラ)、コラボ配信、縦長配信
 - 🎥 **OBS なしでも配信できます**: ブラウザの「スタジオ」画面で画面を組み立て、YouTube / Twitch などへ配信・録画
@@ -131,7 +131,7 @@ xattr -d com.apple.quarantine ./aituber   # 初回だけ (インターネット�
 
 ### コメントを読み込める配信サイト
 
-YouTube / Twitch / ツイキャス / ニコニコ生放送 / Kick
+YouTube / Twitch / ツイキャス / ニコニコ生放送 / Kick / TikTok LIVE (非公式の方法。TikTok 側の変更で使えなくなることがあります)
 
 ### 配信に使うソフト
 
